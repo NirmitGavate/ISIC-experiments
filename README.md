@@ -34,15 +34,23 @@ An in-depth research project to detect malignant skin lesions using image data a
 
 ## 🔍 Model Performance Comparison
 
-| Model                  | Accuracy | AUC    | F1 (Malignant) | TN  | FP  | FN  | TP  |
-|------------------------|----------|--------|----------------|-----|-----|-----|-----|
-| EfficientNet-B0        | 78.65%   | 0.761  | 0.4977         | 686 | 133 | 83  | 107 |
-| Random Forest          | 88%      | 0.9317 | 0.57           | 808 | 11  | 110 | 80  |
-| Logistic Regression    | 73%      | 0.8979 | 0.56           | 572 | 247 | 21  | 169 |
-| Support Vector Machine | 86%      | 0.9232 | 0.68           | 721 | 98  | 40  | 150 |
-| LGBM Classifier        | 90%      | 0.9094 | 0.68           | 792 | 27  | 77  | 113 |
+| Metric               | EfficientNet-B0 | Random Forest | Logistic Regression | SVM   | LGBM  |
+|----------------------|------------------|----------------|----------------------|-------|-------|
+| Accuracy             | 78.65%           | 88%            | 73%                  | 86%   | 90%   |
+| AUC                  | 0.761            | 0.9317         | 0.8979               | 0.9232| 0.9094|
+| F1 (Malignant)       | 0.4977           | 0.57           | 0.56                 | 0.68  | 0.68  |
+| True Negatives (TN)  | 686              | 808            | 572                  | 721   | 792   |
+| False Positives (FP) | 133              | 11             | 247                  | 98    | 27    |
+| False Negatives (FN) | 83               | 110            | 21                   | 40    | 77    |
+| True Positives (TP)  | 107              | 80             | 169                  | 150   | 113   |
+| **Precision**        | 0.4456           | 0.8791         | 0.4069               | 0.6048| 0.8071|
+| **Recall/Sensitivity**| 0.5631          | 0.4211         | 0.8895               | 0.7895| 0.5947|
+
+
 
 **Note**: TN = True Negatives, FP = False Positives, FN = False Negatives, TP = True Positives
+
+
 
 ---
 
@@ -85,15 +93,15 @@ cd skin-cancer-isic2024
 Nirmit Gavate
 📧 Email: gavatenirmit@gmail.com
 
-🔗 GitHub: [@your-github](https://github.com/NirmitGavate)
+🔗 GitHub: [github](https://github.com/NirmitGavate)
 
 🔗 LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/nirmit-gavate-4210262b1/)
 
-📜 License
+## 📜 License
 This project is licensed under the MIT License.
 Feel free to use, share, and modify it with proper attribution.
 
-⭐ Show Your Support
+## ⭐ Show Your Support
 If you found this project helpful, feel free to give it a ⭐ star on GitHub!
 
 
